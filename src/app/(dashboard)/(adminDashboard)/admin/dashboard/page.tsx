@@ -53,7 +53,7 @@ export default async function AdminDashboard() {
           value={new Date(user.updatedAt).toLocaleString()}
         />
 
-        {/* ===== Edit Button ===== */}
+        {/* Edit Button  */}
         <EditProfileModal user={user} />
       </div>
     </div>
