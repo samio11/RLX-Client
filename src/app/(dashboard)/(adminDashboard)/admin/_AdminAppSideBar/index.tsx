@@ -36,10 +36,6 @@ const data = {
         },
       ],
     },
-    {
-      title: "Back Home",
-      url: "/",
-    },
   ],
 };
 
