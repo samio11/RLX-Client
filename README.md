@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 RLX (Role Base Mang. System)
 
-## Getting Started
+A modern, high-performance web application built with Next.js, offering seamless user experience and robust functionality.
 
-First, run the development server:
+## ✨ Features
 
+- **Lightning Fast** - Built with Next.js for optimal performance and SEO
+- **Responsive Design** - Fully responsive across all devices
+- **Modern UI/UX** - Clean and intuitive interface
+- **API Integration** - Connected to RLX Server backend
+- **Type-Safe** - Built with TypeScript for better code quality
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js
+- **Language:** TypeScript/JavaScript
+- **Styling:** CSS/Tailwind CSS
+- **API:** RESTful API integration
+
+## 📋 Prerequisites
+
+Before you begin, ensure you have the following installed:
+- Node.js (v16 or higher)
+- npm or yarn
+- Git
+
+## 🚀 Getting Started
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/samio11/RLX-Client.git
+cd RLX-Client
+```
+
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Set up environment variables
+
+Create a `.env` file in the root directory:
+```env
+NEXT_PUBLIC_BACKEND=your backend url
+```
+
+4. Run the development server
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+RLX-Client/
+├── public/          # Static assets
+├── src/
+│   ├── app/         # Next.js app directory
+│   ├── components/  # React components
+│   ├── lib/         # Utility functions
+│   └── styles/      # Global styles
+├── .env.local       # Environment variables
+└── package.json     # Dependencies
+```
 
-## Learn More
+## 🔧 Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 API Configuration
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The application connects to the RLX Server backend. The API endpoint is configured via environment variables:
 
-## Deploy on Vercel
+```env
+NEXT_PUBLIC_BACKEND=give backend api
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🤝 Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👤 Author
+
+**Samio**
+
+- GitHub: [@samio11](https://github.com/samio11)
+
+## 🙏 Acknowledgments
+
+- Next.js team for the amazing framework
+- All contributors who help improve this project
+
+## 📧 Contact
+
+For questions or support, please open an issue on GitHub.
+
+---
+
+<div align="center">
+Made with ❤️ by Samio
+</div>
