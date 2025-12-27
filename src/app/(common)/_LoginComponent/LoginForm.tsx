@@ -20,7 +20,7 @@ import {
 } from "@/components/ui/form";
 import { useRouter, useSearchParams } from "next/navigation";
 import { toast } from "sonner";
-import { userLogin } from "@/services/user";
+import { getCurrentUser, userLogin } from "@/services/user";
 import { useUser } from "@/context/UserContext";
 
 const loginSchema = z.object({
@@ -34,7 +34,6 @@ export function LoginForm({
 }: React.ComponentProps<"div">) {
   const route = useRouter();
   const s1 = useSearchParams();
-  const redirectPath = s1.get("redirectPath") || "/";
   const { refetchUser } = useUser();
 
   const form = useForm<z.infer<typeof loginSchema>>({
@@ -49,10 +48,11 @@ export function LoginForm({
     const toastId = toast.loading("User Logging...");
     try {
       const result = await userLogin(loginInfo);
+      const s1 = await getCurrentUser();
       if (result?.success) {
         await refetchUser();
         toast.success(result?.message, { id: toastId });
-        route.push(`${result?.data?.role}/dashboard`);
+        route.push(`${s1?.role}/dashboard`);
       } else {
         toast.error("User Login Failed", { id: toastId });
       }
