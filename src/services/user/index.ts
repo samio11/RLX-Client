@@ -110,6 +110,7 @@ export const getUserByToken = async () => {
         },
       }
     ).then((x) => x.json());
+    // revalidateTag("user", "max");
     return res;
   } catch (err) {
     console.log(err);
@@ -126,6 +127,7 @@ export const updateUserByToken = async (payload: FieldValues) => {
       },
       body: JSON.stringify(payload),
     }).then((x) => x.json());
+    revalidateTag("user", "max");
     return res;
   } catch (err) {
     console.log(err);
